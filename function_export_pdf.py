@@ -5,6 +5,8 @@ from reportlab.lib import colors
 
 def export_pdf(data):
 
+    headers = ["ID", "Producto", "Categoría", "Precio ($)", "Ventas (Unid)"]
+
     doc = SimpleDocTemplate("reporte_ejecutivo_ventas.pdf", pagesize=letter)
 
     styles = getSampleStyleSheet()
